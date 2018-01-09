@@ -1,0 +1,38 @@
+body {
+  background-color: #797D7F;
+}
+.jumbotron {
+  background-color: #0099ff;
+}
+.jumbotron ul li {
+  float:left;
+  padding-left: 12.5em;
+  color: white;
+  list-style: none;
+}
+.jumbotron h1 {
+  color:white;
+  text-align:center;
+}
+.col-md-2 h3 {
+  text-align:center;
+  color: white;
+}
+.col-md-2 img {
+  height: 10em;
+  width: 10em;
+  padding-left: 2em;
+  cursor: pointer;
+  color: white;
+}
+.col-md-2 p {
+  display:none;
+  color:white;
+  cursor: pointer;
+}
+.orange-background body {
+    background-color: orange;
+}
+
+
+.toggleClass
