@@ -6,7 +6,7 @@ body {
 }
 .jumbotron ul li {
   float:left;
-  padding-left: 12.5em;
+  padding-left: 8em;
   color: white;
   list-style: none;
 }
@@ -32,8 +32,11 @@ body {
 }
 .orange-background{
     background-color: orange;
+    .jumbrotron:background-color:red;
 }
-
-.blue-background{
-  background-color: blue;
+.jumbotron ul li button {
+  width: 8em;
+  height:3em;
+  background-color: black;
+  color: white;
 }
