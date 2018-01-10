@@ -1,10 +1,12 @@
 var buttonTracker = 0;
+var rave = false;
 $(function(){
   $(".col-md-2").click(function(){
     if (buttonTracker === 1){
       $(this).children("p").toggle();
       $(this).children("img").toggle();
       $(this).children("h3").toggle();
+
     }
     else{
       $(this).children("p").fadeToggle();
@@ -32,7 +34,14 @@ $(function(){
     }
   });
   $("button#rave").click(function(){
-    for(i = 1; i <= 10000; i ++){
+    if (rave === false) {
+      rave = true;
+    } else {
+      rave = false;
+    }
+    setInterval(function(){
+      if (rave === true) {
+
     //  $("body").css('background-color', generateThreeRand());
       first=generateNumberAndHex();
       second=generateNumberAndHex();
@@ -44,8 +53,8 @@ $(function(){
       $("body").css('background-color', rgb);
       $(".jumbotron").css('background-color', rgb2);
       $("h1").css('color', rgb3);
-
     }
+    }, 500)
   });
   var generateNumberAndHex = function() {
      rand = Math.floor(Math.random()*155 + 100);

@@ -32,8 +32,14 @@ body {
 }
 .orange-background{
     background-color: orange;
-    .jumbrotron:background-color:red;
+    .jumbotron:background-color:red;
 }
+.blue-background{
+  background-color: blue;
+  jumbotron:background-color:cyan;
+}
+
+
 .jumbotron ul li button {
   width: 8em;
   height:3em;
